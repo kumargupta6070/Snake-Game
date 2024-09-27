@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevents scrolling */
+            height: 100%; /* Ensures body takes full height */
+        }
+        
+        canvas {
+            display: block;
+            background-color: #262626;
+            border: 2px solid #26e226;
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            font-family: Arial, sans-serif;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
